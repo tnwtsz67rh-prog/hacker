@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Malaf Oxide iOS</title>
+ <style>
+ body { background: #000; color: #0f0; font-family: monospace; padding: 10px; }
+ button { background: #333; border: 1px solid #0f0; color: #0f0; padding: 10px; width: 100%; margin: 5px 0; }
+ button:active { background: #0f0; color: #000; }
+ #output { height: 200px; overflow-y: scroll; border: 1px solid #0f0; padding: 5px; }
+ </style>
+</head>
+<body>
+ <h1>Oxide IO Malaf</h1>
+ <div id="output"></div>
+ <button onclick="activateAimbot()">بدء التصويب (Aimbot)</button>
+ <button onclick="activateESP()">بدء الكشف (ESP)</button>
+ <button onclick="activateGod()">God Mode</button>
+ <button onclick="speedHack()">زيادة السرعة</button>
+
+ <script>
+ // محاكاة كود الهكر داخل المتصفح
+ const log = (msg) => {
+ document.getElementById('output').innerHTML += `> ${msg}<br>`;
+ };
+
+ function activateAimbot() {
+ log("جاري تفعيل الهاكر...");
+ log("Aimbot: ON");
+ log("الهدف: تم العثور على لاعب!");
+ // هنا يتم إرسال الأوامر للعبة
+ }
+
+ function activateESP() {
+ log("ESP: ON");
+ log("جاري رسم خطوط فوق الجدران...");
+ }
+ 
+ function activateGod() {
+ log("God Mode: ON");
+ }
+
+ function speedHack() {
+ log("Speed: 2x");
+ }
+ </script>
+</body>
+</html>
